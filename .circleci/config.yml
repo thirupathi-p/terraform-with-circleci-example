@@ -61,7 +61,7 @@ apply_job: &apply_job
         name: terraform apply
         command: |
           source $BASH_ENV
-          cd environments/$TERRAFORM_ENVIRONMENT
+          cd environments/production
           terraform apply --auto-approve ../../terraform.plan
 
 jobs:
